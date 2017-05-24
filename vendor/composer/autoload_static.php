@@ -6,9 +6,20 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitcf2b69c204498bde518dc94813d92b39
 {
+    public static $prefixesPsr0 = array (
+        'j' => 
+        array (
+            'johnpbloch\\Composer\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/johnpbloch/wordpress-core-installer/src',
+            ),
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixesPsr0 = ComposerStaticInitcf2b69c204498bde518dc94813d92b39::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
