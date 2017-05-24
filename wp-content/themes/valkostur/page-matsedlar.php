@@ -4,8 +4,8 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-YOLO
 <?php
+echo "string";
 if (is_user_logged_in()) { ?>
 	<h3>Leiðbeiningar</h3>
 	<p>Til þess að bæta við réttum á matseðil er fyllt út í gluggana hér að neðan og ýtt að "Bæta við".<p>
